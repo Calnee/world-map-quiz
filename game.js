@@ -8,9 +8,10 @@ const answers=[
 "Europe", 
 "Africa", 
 "North America", 
-"South America"];
+"South America"
+];
 
-let currentQuestion = 0;         
+// let currentQuestion = 0;         
 let score = 0;
 
 const checkAnswer = (clickedContinent) =>  {
@@ -18,9 +19,11 @@ const checkAnswer = (clickedContinent) =>  {
 
     if (clickedContinent == correctAnswer) {    
         score++;
-        document.getElementById('result').innerHTML = 'Correct Answer';}//to print statement in the div with id result
-        else {
-        
-            document.getElementById('result').innerHTML = 'Wrong Answer';;
-        }
+        //to print statement in the div with id result
+        document.getElementById('result').innerHTML = 'Correct Answer';
     }
+    else {
+        
+            document.getElementById('result').innerHTML = 'Wrong Answer';
+        }
+}
